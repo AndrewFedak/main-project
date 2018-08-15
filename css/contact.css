@@ -24,7 +24,7 @@ ul.social-icons {
     list-style-type: none;
     list-style-position: inside;
     position: fixed;
-    margin-top: 12.5%;
+    margin-top: 32.5%;
     margin-left: -3%;
 }
 
@@ -56,20 +56,20 @@ ul.social-icons li.linkedin:hover {
     background-color: #0077B5;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+}
+
 .logo-header {
     background-color: black;
     width: 100%;
     padding-bottom: 2%;
-    margin-top: 25%;
+    margin-top: 5%;
     opacity: 0.6;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     text-align: center;
-}
-
-.header {
-    position: sticky;
-    top: 0;
 }
 
 .logo {
@@ -117,43 +117,26 @@ div.bg-content {
     background-color: #f7f6f6;
     padding-bottom: 2%;
     margin: auto;
-    margin-left: 5%;
     margin-top: 4%;
-    opacity: 0.2;
     border: 1px solid gray;
     border-radius: 4%;
 }
 
-div.bg-content div.text-content .greet {
-    margin-top: 2%;
-    text-align: center;
-    font-family: 'PT Sans';
-    font-size: 36px;
+div.bg-content form {
+    text-align: left;
+}
+
+div.bg-content .paragraph {
+    font-size: 34px;
+    font-family: 'PT-Sans';
     color: #444444;
 }
 
-div.bg-content div.text-content .essence {
+div.bg-content .text {
     margin-top: 2%;
-    text-align: center;
     font-family: 'ABeeZee';
-    font-size: 28px;
+    font-size: 26px;
     color: #7a7a7a;
-}
-
-div.bg-content div.text-content .more-info {
-    margin-top: 4%;
-    width: 15%;
-    height: 40px;
-    background-color: #e6e6e6;
-    font-family: Helvetica bold;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 7%;
-}
-
-div.bg-content div.text-content .more-info:hover {
-    background-color: #929292;
-    color: white;
 }
 
 footer.footer-bg {

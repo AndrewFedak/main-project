@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Live Blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-
     <ul class="social-icons">
         <li class="facebook"><a href="https://facebook.com/andrew.fedak"><img src="social/facebook.png" alt="facebook"></a></li>
         <li class="github"><a href="https://github.com/riba12331"><img src="social/github.png" alt="github"></a></li>
         <li class="linkedin"><a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D0%B9-%D1%84%D0%B5%D0%B4%D0%B0%D0%BA-579691168/"><img src="social/linkedin.png" alt="linkedin"></a></li>
     </ul>
+
     <header class="header">
         <div class="logo-header">
             <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
@@ -31,14 +31,32 @@
         </div>
     </header>
 
-    <div>
-        <img src="img/andrii-fedak.jpg" alt="Andrii Fedak" class="myself">
-    </div>
     <div class="bg-content">
-        <div class="text-content">
-            <p class="greet">Welcome to my Live Blog</p>
-            <p class="essence">Hi, my name is Andrii Fedak. I am 16 years old and it's my website.</p>
-            <a href="data.html"><button class="more-info">More Info</button></a>
+        <p class="paragraph">Contact Form:</p>
+        <p class="text">Write down the data in the line and write me your question:</p>
+        <div class="col-md-9">
+            <form method="POST" action="https://formspree.io/fedakandrew@gmail.com">
+                <div class="row margin-bottom-20">
+                    <div class="col-md-6 col-md-offset-0">
+                        <label for="name">Name</label><br>
+                        <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="row margin-bottom-20">
+                    <div class="col-md-6 col-md-offset-0">
+                        <label for="email">Email</label><br>
+                        <input class="form-control" type="email" id="email" name="Email" required>
+                    </div>
+                </div>
+                <div class="row margin-bottom-20">
+                    <div class="col-md-8 col-md-offset-0">
+                        <label for="message">Message</label>
+                        <textarea rows="8" class="form-control" style="margin: 0px -96.0156px 0px 0px; height: 237px; width: 577px;" id="message" name="Message" required></textarea>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
         </div>
     </div>
     <footer class="footer-bg">
@@ -61,8 +79,7 @@
             </ul>
         </div>
         <form method="POST" action="https://formspree.io/fedakandrew@gmail.com">
-            <input type="email" class="place-for-email" name="email" id="place-for-email" placeholder="unicorn2007@gmail.com" title="email" required>
-            <br>
+            <input type="email" class="place-for-email" name="email" id="place-for-email" placeholder="unicorn2007@gmail.com" title="email" required><br>
             <br>
             <button type="submit" class="btn btn-secondary">Subscribe!</button>
         </form>
@@ -72,8 +89,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
