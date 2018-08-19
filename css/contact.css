@@ -11,21 +11,23 @@
 }
 
 body {
-    background: url(../img/fn.jpg);
-    background-size: 105%;
     background-attachment: fixed;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/fn.jpg);
+    background-origin: padding-box;
+    background-position: 50% 0;
     background-repeat: no-repeat;
-    max-width: 1366px;
-    margin: auto;
+    background-size: cover !important;
+    position: relative;
     text-align: center;
 }
 
 ul.social-icons {
+    z-index: 3;
     list-style-type: none;
     list-style-position: inside;
     position: fixed;
-    margin-top: 32.5%;
-    margin-left: -3%;
 }
 
 ul.social-icons li {
@@ -56,16 +58,14 @@ ul.social-icons li.linkedin:hover {
     background-color: #0077B5;
 }
 
-.header {
-    position: sticky;
-    top: 0;
+nav.navbar {
+    opacity: 0;
 }
 
 .logo-header {
     background-color: black;
     width: 100%;
     padding-bottom: 2%;
-    margin-top: 5%;
     opacity: 0.6;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -79,7 +79,6 @@ ul.social-icons li.linkedin:hover {
 .nav-bg {
     width: 30%;
     background-color: black;
-    opacity: 0.6;
     margin-left: 35%;
     padding-top: 0.8%;
     margin-bottom: 11%;
@@ -113,37 +112,42 @@ div.nav-bg ul.net {
 }
 
 div.bg-content {
-    width: 70%;
-    background-color: #f7f6f6;
-    padding-bottom: 2%;
-    margin: auto;
-    margin-top: 4%;
-    border: 1px solid gray;
-    border-radius: 4%;
+    opacity: 0.2;
 }
 
-div.bg-content form {
-    text-align: left;
-}
-
-div.bg-content .paragraph {
-    font-size: 34px;
-    font-family: 'PT-Sans';
+.paragraph {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'PT Sans';
     color: #444444;
 }
 
-div.bg-content .text {
+.text {
     margin-top: 2%;
+    text-align: center;
     font-family: 'ABeeZee';
-    font-size: 26px;
     color: #7a7a7a;
 }
 
+.send-button {
+    background-color: #38636f;
+    font-family: 'PT-Sans';
+    text-align: center;
+    border-radius: 15%;
+    color: white;
+}
+
+.send-button:hover {
+    background-color: #00576f;
+    font-family: 'PT-Sans';
+    text-align: center;
+    border-radius: 15%;
+    color: #dee6ff;
+}
+
 footer.footer-bg {
-    width: 70%;
     background-color: black;
     margin-top: 10%;
-    margin-left: 14.98%;
     margin-bottom: 5%;
     padding-bottom: 1%;
     padding-top: 2%;
@@ -163,7 +167,7 @@ li.contact {
     font-family: Helvetica;
     text-align: left;
     list-style-type: none;
-    padding: 15px;
+    padding: 20px;
 }
 
 footer.footer-bg div ul li.contact-details,
@@ -198,6 +202,7 @@ footer div ul li.text-for-sub {
 footer div ul li.join-our-newsteller,
 li.text-for-sub {
     margin-bottom: -6%;
+    margin-top: 1%;
 }
 
 footer div ul.menu li a {
@@ -212,42 +217,285 @@ footer div ul.menu li a:hover {
     color: deepskyblue;
 }
 
-div.footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-form {
-    text-align: right;
-}
-
 .place-for-email {
     background-color: black;
     border: 1px solid gray;
-    width: 25%;
     border-radius: 5%;
     color: white;
     padding: 8px;
     font-size: 12px;
     text-align: center;
-    margin-right: 3.5%;
-    margin-top: -7%;
 }
 
 .btn {
-    width: 15%;
-    height: 40px;
     font-size: 16px;
-    background-color: gray;
     text-align: center;
     font-family: 'PT Sans';
-    border-radius: 7%;
     color: white;
-    margin-right: 9.2%;
 }
 
 .copyright {
-    color: #5effff;
-    text-align: right;
+    color: #4D3232;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    nav.navbar {
+        width: 100%;
+        opacity: 1;
+    }
+    body {
+
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+    ul.social-icons {
+        margin-top: 37.5%;
+        margin-left: -3%;
+        opacity: 0;
+    }
+    .header {
+        position: static;
+        top: 0;
+    }
+    .logo-header {
+        margin-top: 400px;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .navigate {
+        opacity: 0;
+    }
+    div.bg-content {
+        width: 100%;
+        background-color: #f7f6f6;
+        padding-bottom: 2%;
+        margin: auto;
+        margin-top: 4%;
+        border: 1px solid gray;
+        border-radius: 4%;
+    }
+    .paragraph {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .form-control {
+        width: 150%;
+    }
+    .col-md-6,
+    .col-md-8 {
+        margin-left: -87%;
+        text-align: left;
+    }
+    .send-button {
+        width: 40%;
+        height: 35px;
+        margin-left: -151%;
+        font-size: 16px;
+    }
+    footer.footer-bg {
+        width: 100%;
+        padding-right: 45%;
+    }
+    .menu {
+        padding-right: 90px;
+    }
+    .newsteller {
+        margin-left: 70%;
+    }
+    div.footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    form {
+        text-align: center;
+        margin-left: 58%;
+    }
+    .place-for-email {
+        width: 80%;
+        height: 40px;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .btn {
+        width: 60%;
+        margin-left: 46%;
+        font-size: 10px;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav.navbar {
+        width: 100%;
+        opacity: 1;
+    }
+    body {
+        max-width: 910px;
+        margin: auto;
+        text-align: center;
+    }
+    ul.social-icons {
+        margin-top: 37.5%;
+        margin-left: -3%;
+        opacity: 0;
+    }
+    .header {
+        position: static;
+        top: 0;
+    }
+    .logo-header {
+        margin-top: 400px;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .navigate {
+        opacity: 0;
+    }
+    div.bg-content {
+        width: 100%;
+        background-color: #f7f6f6;
+        padding-bottom: 2%;
+        margin: auto;
+        margin-top: 4%;
+        border: 1px solid gray;
+        border-radius: 4%;
+        text-align: center;
+    }
+    .paragraph {
+        font-size: 34px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    .col-md-6,
+    .col-md-8 {
+        text-align: left;
+    }
+    .send-button {
+        margin-left: -75%;
+        width: 20%;
+        height: 45px;
+        font-size: 18px;
+    }
+    footer.footer-bg {
+        width: 100%;
+        padding-right: 5%;
+    }
+    .newsteller {
+        margin-top: -10.5%;
+        padding-bottom: -15%;
+    }
+    .menu {
+        margin-top: 0.1%;
+    }
+    div.footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .place-for-email {
+        width: 24%;
+        margin-left: 75%;
+
+    }
+    .btn {
+        width: 15%;
+        height: 40px;
+        margin-left: 75%;
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (min-width: 898px) {
+    body {
+        max-width: 2000px;
+        text-align: center;
+    }
+
+    ul.social-icons {
+        list-style-type: none;
+        list-style-position: inside;
+        position: fixed;
+        margin-top: 460px;
+        margin-left: -3%;
+        opacity: 1;
+    }
+
+    .logo-header {
+        width: 100%;
+        padding-bottom: 2%;
+        margin-top: 300px;
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    nav.navbar {
+        opacity: 0;
+    }
+
+    header.header {
+        z-index: 2;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        margin-top: 2%;
+    }
+
+    .navigate {
+        width: 30%;
+        opacity: 0.8;
+    }
+    div.bg-content {
+        width: 85%;
+        margin-left: 7.5%;
+        background-color: #f7f6f6;
+        padding-bottom: 2%;
+        margin: auto;
+        margin-top: 4%;
+        border: 1px solid gray;
+        border-radius: 4%;
+        z-index: 1;
+    }
+    .paragraph {
+        font-size: 36px;
+    }
+    .text {
+        font-size: 26px;
+    }
+    .col-md-6,
+    .col-md-8 {
+        text-align: left;
+    }
+    .send-button {
+        margin-left: -75%;
+        width: 16%;
+        height: 45px;
+        font-size: 18px;
+    }
+    .newsteller {
+        margin-top: -8.5%;
+    }
+    footer.footer-bg {
+        width: 85%;
+        margin-left: 7.5%;
+        padding-right: 10%;
+        padding-left: 6%;
+    }
+    .place-for-email {
+        width: 23%;
+        margin-left: 76%;
+    }
+    .btn {
+        width: 15%;
+        height: 40px;
+        margin-left: 75.8%;
+        margin-bottom: 3%;
+    }
 }

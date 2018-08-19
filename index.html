@@ -5,24 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Live Blog</title>
+    <title>Andrii's Blog</title>
+    <link rel="icon" href="img/computer.png" type="images/x-icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
     <ul class="social-icons">
-        <li class="facebook"><a href="https://facebook.com/andrew.fedak"><img src="social/facebook.png" alt="facebook"></a></li>
-        <li class="github"><a href="https://github.com/riba12331"><img src="social/github.png" alt="github"></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D0%B9-%D1%84%D0%B5%D0%B4%D0%B0%D0%BA-579691168/"><img src="social/linkedin.png" alt="linkedin"></a></li>
+        <li class="facebook"><a href="https://facebook.com/andrew.fedak"><img src="img/social/facebook.png" alt="facebook"></a></li>
+        <li class="github"><a href="https://github.com/riba12331"><img src="img/social/github.png" alt="github"></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D0%B9-%D1%84%D0%B5%D0%B4%D0%B0%D0%BA-579691168/"><img src="img/social/linkedin.png" alt="linkedin"></a></li>
     </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header class="header">
-        <div class="logo-header">
+        <div class="logo-header" id="mainLine">
             <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
         </div>
-        <div class="nav-bg">
+        <div class="nav-bg navigate">
             <ul class="net">
                 <li class="navigation"><a href="index.html">Home</a></li>
                 <li class="navigation"><a href="data.html">About</a></li>
@@ -34,7 +55,7 @@
     <div>
         <img src="img/andrii-fedak.jpg" alt="Andrii Fedak" class="myself">
     </div>
-    <div class="bg-content">
+    <div class="bg-content" id="bg-content">
         <div class="text-content">
             <p class="greet">Welcome to my Live Blog</p>
             <p class="essence">Hi, my name is Andrii Fedak. I am 16 years old and it's my website.</p>
@@ -52,7 +73,7 @@
             <ul class="menu">
                 <li class="smart-menu">Smart Menu:</li>
                 <li class="home"><i class="fas fa-home">   </i><a href="index.html">Home</a></li>
-                <li class="about"><i class="fab fa-wikipedia-w">  </i><a href="data.html">About me</a></li>
+                <li class="about"><i class="fab fa-wikipedia-w"> </i><a href="data.html">About me</a></li>
                 <li class="contact"><i class="fas fa-comments">   </i><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="newsteller">
@@ -72,7 +93,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
